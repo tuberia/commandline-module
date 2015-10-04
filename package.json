@@ -1,0 +1,34 @@
+{
+  "name": "tuberia-commandline-module",
+  "version": "1.0.0-rc.1",
+  "description": "Command line interaction for your Tuberia pipelines.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel --optional es7.functionBind -d lib/ src/",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "mercurial",
+    "url": "https://bitbucket.org/tuberia/commandline-module"
+  },
+  "keywords": [
+    "tuberia",
+    "tuberia-module",
+    "command",
+    "line",
+    "arguments",
+    "prompts"
+  ],
+  "author": "Colin Bate <colin@colinbate.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/tuberia/commandline-module#readme",
+  "devDependencies": {
+    "babel": "^5.8.23"
+  },
+  "dependencies": {
+    "pify": "^2.2.0",
+    "prompt": "^0.2.14",
+    "yargs": "^3.26.0"
+  }
+}
